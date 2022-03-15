@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../Exp6.srcs/sources_1/ip/mult_gen_2/sim/mult_gen_2.vhd" \
+
+nosort

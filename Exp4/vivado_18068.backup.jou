@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov 22 09:35:39 2021
+# Process ID: 18068
+# Current directory: C:/Users/mengb/arch/Exp4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2892 C:\Users\mengb\arch\Exp4\Exp4.xpr
+# Log file: C:/Users/mengb/arch/Exp4/vivado.log
+# Journal file: C:/Users/mengb/arch/Exp4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mengb/arch/Exp4/Exp4.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/mengb/arch/Exp4/Exp4.runs/impl_1/top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k325t_0]
+set_property PROGRAM.FILE {C:/Users/mengb/arch/Exp4/Exp4.runs/impl_1/top.bit} [get_hw_devices xc7k325t_0]
+program_hw_devices [get_hw_devices xc7k325t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k325t_0] 0]

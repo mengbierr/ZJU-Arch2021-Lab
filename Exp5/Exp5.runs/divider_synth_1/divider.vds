@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Dec 19 09:33:49 2021
+# Process ID: 15748
+# Current directory: C:/Users/mengb/arch/Exp5/Exp5.runs/divider_synth_1
+# Command line: vivado.exe -log divider.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source divider.tcl
+# Log file: C:/Users/mengb/arch/Exp5/Exp5.runs/divider_synth_1/divider.vds
+# Journal file: C:/Users/mengb/arch/Exp5/Exp5.runs/divider_synth_1\vivado.jou
+#-----------------------------------------------------------
+source divider.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP divider, cache-ID = 15384919b3669eaf.
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 19 09:34:06 2021...

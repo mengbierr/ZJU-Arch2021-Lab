@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Oct 10 17:13:45 2021
+# Process ID: 42428
+# Current directory: C:/Users/mengb/arch/Exp1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent41940 C:\Users\mengb\arch\Exp1\Exp1.xpr
+# Log file: C:/Users/mengb/arch/Exp1/vivado.log
+# Journal file: C:/Users/mengb/arch/Exp1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mengb/arch/Exp1/Exp1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/mengb/arch/Exp1/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core/register}} 
+relaunch_sim
+current_wave_config {core_sim_behav.wcfg}
+add_wave {{/core_sim/core}} 
+relaunch_sim
+save_wave_config {C:/Users/mengb/arch/Exp1/code/sim/core_sim_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/mengb/arch/Exp1/code/sim/core_sim_behav.wcfg
+source core_sim.tcl
+close_sim

@@ -1,0 +1,236 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Nov  1 15:58:57 2021
+| Host         : LAPTOP-7F5OQ7U4 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7k325tl
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   158 |
+|    Minimum number of control sets                        |   158 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   754 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   158 |
+| >= 0 to < 4        |    85 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    54 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             156 |          120 |
+| No           | No                    | Yes                    |             210 |           88 |
+| No           | Yes                   | No                     |             621 |          394 |
+| Yes          | No                    | No                     |            1563 |          697 |
+| Yes          | No                    | Yes                    |            1094 |          441 |
+| Yes          | Yes                   | No                     |              58 |           14 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+------------------------------------------+------------------------------------+------------------+----------------+--------------+
+|          Clock Signal          |               Enable Signal              |          Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------+------------------------------------------+------------------------------------+------------------+----------------+--------------+
+|  debug_clk                     |                                          | core/reg_EXE_MEM/rst_all_reg       |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[46]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[52]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[56]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[114]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[113]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[58]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[32]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[115]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[36]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[35]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[113]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[115]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[32]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[32]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[38]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[48]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[36]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[46]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[59]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[38]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[42]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[36]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[35]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[49]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[115]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[42]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  debug_clk                     |                                          | core/reg_MEM_WB/rst_all_reg_2      |                1 |              1 |         1.00 |
+|  debug_clk                     |                                          | core/reg_MEM_WB/rst_all_reg        |                1 |              1 |         1.00 |
+|  debug_clk                     |                                          | core/reg_MEM_WB/rst_all_reg_1      |                1 |              1 |         1.00 |
+|  debug_clk                     | core/exp_unit/curState[1]_i_1_n_0        | core/reg_MEM_WB/rst_all_reg_0      |                1 |              1 |         1.00 |
+|  debug_clk                     | core/exp_unit/curState[1]_i_1_n_0        | core/reg_MEM_WB/rst_all_reg_3      |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[32]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[35]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[48]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[46]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[59]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[52]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[113]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[114]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[58]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[48]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[56]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[49]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[58]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  core/reg_EXE_MEM/rst_all_reg  |                                          | core/reg_MEM_WB/rst_all_reg_1      |                1 |              1 |         1.00 |
+|  core/reg_MEM_WB/rst_all_reg   |                                          | core/reg_MEM_WB/rst_all_reg_2      |                1 |              1 |         1.00 |
+|  core/reg_MEM_WB/rst_all_reg_0 |                                          | rst_all                            |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[52]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[49]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[113]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[56]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i4/inst_reg[59]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[114]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i1/inst_reg[114]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[35]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[115]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[42]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[36]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[46]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[38]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[52]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[56]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[49]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[48]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[58]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i5/inst_reg[59]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[48]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[42]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[46]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[38]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[49]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[52]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[56]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[58]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i2/inst_reg[59]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[114]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[113]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[115]/G0     |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[38]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[36]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[32]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[35]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+|  vga/c2i3/inst_reg[42]/G0      |                                          |                                    |                1 |              1 |         1.00 |
+| ~debug_clk                     |                                          |                                    |                2 |              3 |         1.50 |
+|  CLK_GEN/CLK_OUT3              | DISPLAY/P2S_LED/data_count[3]_i_1__0_n_0 | rst_all                            |                1 |              4 |         4.00 |
+|  debug_clk                     |                                          |                                    |                2 |              4 |         2.00 |
+| ~debug_clk                     | core/exp_unit/csr_raddr[6]_i_1_n_0       |                                    |                1 |              4 |         4.00 |
+| ~debug_clk                     | core/exp_unit/csr_waddr[6]_i_2_n_0       | core/exp_unit/csr_waddr[6]_i_1_n_0 |                1 |              4 |         4.00 |
+|  CLK_GEN/CLK_OUT3              | BTN_SCAN/p_0_in                          |                                    |                1 |              5 |         5.00 |
+|  CLK_GEN/CLK_OUT1              |                                          | vga/U12/v_count_reg[8]_0           |                3 |              5 |         1.67 |
+|  CLK_GEN/CLK_OUT3              | DISPLAY/P2S_SEG/next_data_count          | rst_all                            |                2 |              6 |         3.00 |
+|  CLK_GEN/CLK_OUT3              | DISPLAY/P2S_LED/buff_0                   | DISPLAY/P2S_LED/buff[16]_i_1_n_0   |                1 |              7 |         7.00 |
+|  CLK_GEN/CLK_OUT1              | vga/U12/E[0]                             |                                    |                6 |              7 |         1.17 |
+|  debug_clk                     | core/exp_unit/rst_all_reg_2              | core/exp_unit/rst_all_reg_4        |                3 |              9 |         3.00 |
+|  CLK_GEN/CLK_OUT3              |                                          | vga/U12/h_count[9]_i_1_n_0         |                3 |             10 |         3.33 |
+|  CLK_GEN/CLK_OUT3              | vga/U12/v_count                          |                                    |                4 |             10 |         2.50 |
+|  CLK_GEN/CLK_OUT3              | DISPLAY/P2S_LED/buff_0                   |                                    |                4 |             10 |         2.50 |
+|  debug_clk                     | core/exp_unit/curState_reg[1]_2[0]       | rst_all                            |                2 |             10 |         5.00 |
+|  CLK_GEN/CLK_OUT3              |                                          | vga/U12/rdn_reg_n_0                |                2 |             12 |         6.00 |
+|  CLK_GEN/CLK_OUT3              | DISPLAY/P2S_SEG/buff                     | DISPLAY/P2S_SEG/buff[64]_i_1_n_0   |                3 |             13 |         4.33 |
+|  CLK_GEN/CLK_OUT1              |                                          | vga/U12/v_count_reg[8]_15          |                7 |             13 |         1.86 |
+|  CLK_GEN/CLK_OUT3              | DISPLAY/P2S_SEG/buff                     |                                    |                2 |             14 |         7.00 |
+|  CLK_GEN/CLK_OUT3              | DISPLAY/P2S_SEG/buff                     | DISPLAY/P2S_SEG/buff[63]_i_1_n_0   |                3 |             15 |         5.00 |
+|  CLK_GEN/CLK_OUT4              |                                          |                                    |                5 |             17 |         3.40 |
+|  CLK_GEN/CLK_OUT3              |                                          |                                    |               12 |             26 |         2.17 |
+|  CLK_GEN/CLK_OUT3              |                                          | rst_all                            |                9 |             28 |         3.11 |
+|  CLK_GEN/CLK_OUT1              |                                          |                                    |               24 |             31 |         1.29 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_6[0]     | rst_all                            |               17 |             32 |         1.88 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_8[0]     | rst_all                            |               12 |             32 |         2.67 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_9[0]     | rst_all                            |               10 |             32 |         3.20 |
+|  debug_clk                     | core/exp_unit/csr/CSR[13][31]_i_1_n_0    | rst_all                            |                9 |             32 |         3.56 |
+|  debug_clk                     | core/exp_unit/csr/CSR[12][31]_i_1_n_0    | rst_all                            |               13 |             32 |         2.46 |
+|  debug_clk                     | core/exp_unit/csr/CSR[14][31]_i_1_n_0    | rst_all                            |               10 |             32 |         3.20 |
+|  debug_clk                     | core/exp_unit/csr/CSR[15][31]_i_1_n_0    | rst_all                            |               14 |             32 |         2.29 |
+|  debug_clk                     | core/exp_unit/csr/CSR[2][31]_i_1_n_0     | rst_all                            |               13 |             32 |         2.46 |
+|  debug_clk                     | core/exp_unit/csr/CSR[1][31]_i_1_n_0     | rst_all                            |               13 |             32 |         2.46 |
+|  debug_clk                     | core/exp_unit/csr/CSR[0][31]_i_1_n_0     | rst_all                            |               11 |             32 |         2.91 |
+|  debug_clk                     | core/exp_unit/csr/CSR[11][31]_i_1_n_0    | rst_all                            |               17 |             32 |         1.88 |
+|  debug_clk                     | core/exp_unit/csr/CSR[10][31]_i_1_n_0    | rst_all                            |               12 |             32 |         2.67 |
+|  debug_clk                     | core/exp_unit/csr/CSR[5][31]_i_1_n_0     | rst_all                            |               10 |             32 |         3.20 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_0[0]     | rst_all                            |               16 |             32 |         2.00 |
+|  debug_clk                     | core/exp_unit/csr/CSR[7][31]_i_1_n_0     | rst_all                            |               15 |             32 |         2.13 |
+|  debug_clk                     | core/exp_unit/csr/CSR[6][31]_i_1_n_0     | rst_all                            |               15 |             32 |         2.13 |
+|  debug_clk                     | core/exp_unit/csr/CSR[4][31]_i_1_n_0     | rst_all                            |               13 |             32 |         2.46 |
+|  debug_clk                     | core/exp_unit/csr/CSR[3][31]_i_1_n_0     | rst_all                            |               12 |             32 |         2.67 |
+|  debug_clk                     | core/exp_unit/csr/CSR[8][31]_i_1_n_0     | rst_all                            |               15 |             32 |         2.13 |
+|  debug_clk                     | core/exp_unit/csr/CSR[9][31]_i_1_n_0     | rst_all                            |               12 |             32 |         2.67 |
+|  debug_clk                     | core/reg_IF_ID/PCurrent_ID[31]_i_1_n_0   | rst_all                            |               11 |             32 |         2.91 |
+| ~debug_clk                     | core/exp_unit/csr_wdata[31]_i_1_n_0      |                                    |               15 |             32 |         2.13 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_10[0]    | rst_all                            |               13 |             32 |         2.46 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_11[0]    | rst_all                            |                8 |             32 |         4.00 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_13[0]    | rst_all                            |               14 |             32 |         2.29 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_14[0]    | rst_all                            |               13 |             32 |         2.46 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_2[0]     | rst_all                            |               12 |             32 |         2.67 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_1[0]     | rst_all                            |               15 |             32 |         2.13 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_3[0]     | rst_all                            |               13 |             32 |         2.46 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_12[0]    | rst_all                            |               14 |             32 |         2.29 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_4[0]     | rst_all                            |               13 |             32 |         2.46 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_5[0]     | rst_all                            |               14 |             32 |         2.29 |
+| ~debug_clk                     | core/reg_MEM_WB/RegWrite_WB_reg_7[0]     | rst_all                            |               16 |             32 |         2.00 |
+| ~CLK_GEN/CLK_OUT1              | vga/U12/h_count_reg[3]_3[0]              |                                    |               15 |             33 |         2.20 |
+| ~CLK_GEN/CLK_OUT1              | vga/U12/h_count_reg[3]_2[0]              |                                    |               16 |             33 |         2.06 |
+| ~CLK_GEN/CLK_OUT1              | vga/U12/h_count_reg[3]_0[0]              |                                    |               20 |             33 |         1.65 |
+| ~CLK_GEN/CLK_OUT1              | vga/U12/h_count_reg[3]_1[0]              |                                    |               16 |             33 |         2.06 |
+| ~CLK_GEN/CLK_OUT1              | vga/U12/h_count_reg[3]_4[0]              |                                    |               16 |             33 |         2.06 |
+|  CLK_GEN/CLK_OUT1              | vga/U12/should_latch_debug_data          |                                    |                6 |             48 |         8.00 |
+|  debug_clk                     | core/reg_IF_ID/E[0]                      | rst_all                            |               22 |             58 |         2.64 |
+|  debug_clk                     | core/exp_unit/E[0]                       |                                    |               14 |             65 |         4.64 |
+|  debug_clk                     | core/exp_unit/rst_all_reg_2              |                                    |               44 |             97 |         2.20 |
+|  inst_reg[150]_i_2__3_n_0      |                                          | vga/c2i5/inst_reg[150]_i_3_n_0     |               71 |            110 |         1.55 |
+|  inst_reg[150]_i_2__1_n_0      |                                          | vga/c2i3/inst_reg[150]_i_3_n_0     |               82 |            110 |         1.34 |
+|  inst_reg[150]_i_2_n_0         |                                          | vga/c2i1/inst_reg[150]_i_3_n_0     |               71 |            110 |         1.55 |
+|  inst_reg[150]_i_2__2_n_0      |                                          | vga/c2i4/inst_reg[150]_i_3_n_0     |               70 |            110 |         1.57 |
+|  inst_reg[150]_i_2__0_n_0      |                                          | vga/c2i2/inst_reg[150]_i_3_n_0     |               73 |            110 |         1.51 |
+|  debug_clk                     | core/exp_unit/rst_all_reg_3              |                                    |               79 |            137 |         1.73 |
+|  debug_clk                     |                                          | rst_all                            |               84 |            206 |         2.45 |
+| ~debug_clk                     | core/data_ram/p_1_out                    |                                    |              444 |           1024 |         2.31 |
++--------------------------------+------------------------------------------+------------------------------------+------------------+----------------+--------------+
+
+
